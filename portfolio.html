@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>UAS Portfolio</title>
+    <link href="portfolio css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="logo-top">
+        <img src="image/logo jihan.png" alt="Logo" class="logo-top-image" />
+    </div>
+
+  <div class="menu-wrapper">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<div class="portfolio">
+        <img src="image/teks portfolio.png" alt="Logo" class="portfolio-image"/>
+</div>
+
+<div class="portfolio-section scroll-reveal">
+  <div class="portfolio-images">
+    <img src="image/porfolio 1 (1).png" alt="Poster 1">
+  </div>
+
+  <div class="portfolio-text">
+    <h2>Poster</h2>
+    <h3>A collection of posters designed for competitions and committee events, combining clear communication with creative visuals.</h3>
+    <a href="https://www.canva.com/design/DAGl2OR0Iv0/PETMCjSLFm9PtVvrHOyz4Q/edit?utm_content=DAGl2OR0Iv0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="view-button">View</a>
+  </div>
+</div>
+
+<div class="portfolio-section2 scroll-reveal">
+  <div class="portfolio-images2">
+    <img src="image/portfolio 2.png" alt="2">
+  </div>
+
+  <div class="portfolio-text2">
+    <h2>Mobile App</h2>
+    <h3>Blood Buddy is a mobile app developed as part of a university assignment. It serves as a reminder tool for teenage girls to take their iron supplements regularly. The goal of the app is to promote healthy habits and help prevent anemia through simple daily notifications and friendly reminders.</h3>
+    <a href="https://www.figma.com/proto/JAc19xCVlTY2gpBpwWrUMq/BLOODBUDDY?page-id=0%3A1&node-id=35-819&starting-point-node-id=35%3A819&t=lNUcn2qixPfA2MRo-1" class="view-button2">View</a>
+  </div>
+</div>
+
+<div class="portfolio-section3 scroll-reveal">
+  <div class="portfolio-images3">
+    <img src="image/porfolio 3.png" alt="3">
+  </div>
+
+  <div class="portfolio-text3">
+    <h2>Book Photography</h2>
+    <h3>Book Photography is a collection of beautiful photos taken by me. Each picture captures a unique moment and reflects my personal style and perspective.</h3>
+    <a href="https://heyzine.com/flip-book/4f6ef6d0e9.html" class="view-button3">View</a>
+  </div>
+</div>
+
+<div class="portfolio-section4 scroll-reveal">
+  <div class="portfolio-images4">
+    <img src="image/porfolio 4.png" alt="4">
+  </div>
+
+  <div class="portfolio-text4">
+    <h2>Story Book</h2>
+    <h3>This storybook explores cultural themes through the tale of a dancer who is believed to have the mythical power to revive a barren village. The story blends tradition and imagination to highlight the richness of local heritage.</h3>
+    <a href="https://heyzine.com/flip-book/6becbddde8.html" class="view-button4">View</a>
+  </div>
+</div>
+
+<footer class="custom-footer scroll-reveal">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2025 Jihanni Sheila Utami</p>
+    </div>
+    <div class="footer-right">
+      <h4>Follow</h4>
+      <div class="social-icons">
+        <a href="https://x.com/UtamiJihan71921" target="_blank">
+          <img src="image/x.png" alt="X">
+        </a>
+        <a href="https://www.instagram.com/jhnlaaa" target="_blank">
+          <img src="image/ig.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+
+    function scrollReveal() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        revealElements.forEach(el => {
+            const boxTop = el.getBoundingClientRect().top;
+
+            if (boxTop < triggerBottom) {
+                el.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', scrollReveal);
+    window.addEventListener('load', scrollReveal);
+</script>
+</body>
