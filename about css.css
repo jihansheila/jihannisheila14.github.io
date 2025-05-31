@@ -12,10 +12,10 @@ body {
 }
 
 .logo-top-image {
-    width: 180px; 
+    width: 120px; 
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .menu-wrapper {
@@ -170,7 +170,6 @@ nav a:last-child {
     transform: scale(1.05); 
 }
 
-
 .custom-footer {
     background-color: #f6eee1; 
     color: #924c56;
@@ -179,59 +178,68 @@ nav a:last-child {
     margin-top: 0;
 }
 
+.custom-footer {
+  background-color: #f6eee1;
+  padding: 20px 40px;
+}
+
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: auto;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-left,
 .footer-right {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.footer-left {
-    text-align: center;
-    border-right: 1px solid #924c56;
+.footer-left-image {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
-.footer-left p,
-.footer-left a {
-    margin: 8px 0;
-    display: block;
-    font-size: 14px;
-    color: #924c56;
-    text-decoration: none;
-}
-
-.footer-left a:hover {
-    text-decoration: underline;
+.footer-left p {
+  margin: 0;
+  font-size: 18px;
+  color: #924c56;
+  font-weight: bold;
 }
 
 .footer-right {
-    text-align: center;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .footer-right h4 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #924c56;
+  font-size: 20px;
+  color: #924c56;
+  margin-right: 10px ;
+  padding-bottom: 2px;
+  padding-top: 5px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
+.social-icons {
+  display: flex;
+  gap: 20px;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 1024px) {
